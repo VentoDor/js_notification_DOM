@@ -4,6 +4,7 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   const div = document.createElement('div');
 
   div.classList.add('notification');
+  div.style.position = 'absolute';
 
   if (type === 'success') {
     div.classList.add('success');
